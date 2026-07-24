@@ -1,9 +1,13 @@
-# Tela Login Smart Control
+# Smart Control
 
-1.Criando tela de login com html puro utilizando forms, inputs e button.
+Projeto front-end simples, feito em HTML puro, simulando um sistema de controle com tela de login, dashboard e página de produção. Ideal como prática de formulários, navegação entre páginas e estruturação de tabelas em HTML.
 
-2.Foi criado a tela de dashboard, nela contem a barra de navegação e a tabela de produção.
+🔗 Demo: https://hendrickglansmann.github.io/smart-control/
 
-3.Foi feito a ligação entre as telas index.html e dashboard.html.
+Sobre o projeto:
+O Smart Control é um exercício de front-end que reproduz o fluxo básico de um sistema administrativo:
+Login (index.html) — tela de autenticação com formulário de e-mail corporativo e senha.
+Dashboard (dashboard.html) — página inicial pós-login, com menu de navegação (Relatórios, Produção, Metas, Condições Climáticas, Ajuda) e uma tabela de acessos recentes.
+Produção (producao.html) — página dedicada aos dados de produção, acessada a partir do menu do dashboard. 
 
-4.Foi criado tela de produção e atualizado o dashboard com acessos recentes.
+Desenvolvido por [Hendrick Glansmann](https://github.com/HendrickGlansmann)
