@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Smart Control</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" alt="logo da empresa" width="100" height="80">
+    </header>
+
+    <main>
+        <h1>Faça seu Cadastro</h1>
+        <p>Preencha o formulario abaixo com os respectivos dados cadastrais.</p>
+        <form method="get" action="dashboard.html">
+            <label for="nome">Nome Completo</label><br>
+            <input type="text" name="nome" id="nome" required>
+            <br><br>
+
+            <label for="email">E-mail Corporativo</label><br>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Deve conter pelo menos 8 caracteres" minlength="8">
+            <br><br>
+
+            <label for="nivel_acesso">Nivel de Acesso</label><br>
+            <select name="nivel_acesso" id="nivel_acesso" required>
+                <option value="">Selecione o nivel de acesso</option>
+                <option value="admin">Administrador</option>
+                <option value="user">Usuário</option>
+            </select>
+            <br><br>
+
+            <input type="checkbox" name="termos" id="termos" required>
+            <label for="termos">Aceito os Termos</label><br><br>
+
+            <button type="submit">Cadastrar</button>
+            <br>
+            <p>Já possui uma conta? <a href="index.html">Clique aqui para fazer login</a></p>
+        </form>
+
+    </main>
+</body>
+</html>
