@@ -6,14 +6,22 @@
     <title>LOGIN SMART CONTROL</title>
 </head>
 <body>
-    <h1>LOGIN</h1>
-    <form method="get" action="dashboard.html">
-        <label for="email">E-mail Corporativo</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail corporativo" required>
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" required>
-        <button type="submit">Avançar</button>
-        <p>Não possui uma conta? <a href="cadastro.html">Clique aqui para se Cadastrar</a></p>
-    </form>
+    <main class="container">
+        <div class="card" id= info-login >
+            <h1>Smart Control</h1>
+            <h2>Login</h2>
+            <img src="assets/images/logo_transparent.png" alt="logo smart control" style="border-radius: 50%; width: 20vw;">
+        </div>
+        <div class= "card">
+            <form method="get" action="dashboard.html">
+                <label for="email">E-mail Corporativo</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail corporativo" required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+                <button type="submit">Avançar</button>
+                <p>Não possui uma conta? <a href="cadastro.html">Clique aqui para se Cadastrar</a></p>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
