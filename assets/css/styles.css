@@ -34,6 +34,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
   }
   
@@ -42,6 +43,8 @@
     border-radius: 16px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     padding: 40px;
+    width: 100%;
+    height: stretch;
   }
   
   #info-login {
@@ -70,9 +73,9 @@
     margin-top: 10px;
   }
   
-  .card:not(#info-login) {
+  /* .card:not(#info-login) {
     width: 350px;
-  }
+  } */
   
   form {
     display: flex;
