@@ -79,6 +79,41 @@ thead {
   color: white;
 }
 
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.online {
+  background: rgba(40, 167, 69, .2);
+  color: #2ecc71;
+}
+
+.ausente {
+  background: rgba(255, 193, 7, .2);
+  color: #f1c40f;
+}
+
+.offline {
+  background: rgba(220, 53, 69, .2);
+  color: #ff6b6b;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: currentColor;
+}
+
 th,
 td {
   padding: 18px;
