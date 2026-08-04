@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ebebeb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+  
+body::before {
+    content: "";
+    position: fixed;
+    bottom: -10%;
+    right: -10%;
+    width: 65vw;
+    height: 65vw;
+    max-width: 900px;
+    max-height: 900px;
+    background: linear-gradient(135deg, #2450ca, #3793cf);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+  
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    height: stretch;
+}
+
+#info-cadastro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+  
+#info-cadastro h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+}
+  
+#info-cadastro h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2450ca;
+}
+  
+#info-cadastro img {
+    margin-top: 10px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #ececec;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus
+input[type="text"]:focus {
+    outline: 2px solid #2450ca;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #2e6f9e, #1c4f74);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(28, 79, 116, 0.35);
+}
+
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #ececec;
+    font-size: 14px;
+    color: #333;
+}
+
+button:hover {
+    filter: brightness(1.05);
+}
+
+form p {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 18px;
+}
+
+form p a {
+    color: #2f7fd6;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.label-termos {
+    padding: 12px 14px;
+    color: #333;
+    justify-content: flex-end;
+}
+
+
