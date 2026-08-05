@@ -71,6 +71,8 @@ body::before {
   
 #info-cadastro img {
     margin-top: 10px;
+    border-radius: 50%;
+    width: 8vw;
 }
   
 form {
@@ -152,5 +154,31 @@ form p a {
     color: #333;
     justify-content: flex-end;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    body ::before {
+        width: 100vw;
+        height: 100vw;
+        bottom: -20%;
+        right: -20%;
+    }
+    
+    .card {
+        width: 90%;
+        padding: 30px;
+    }
+  
+    #info-cadastro img {
+        width: 30vw;
+        border-radius: 50%;
+
+    }
+}
+
 
 
