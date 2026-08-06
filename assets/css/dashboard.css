@@ -227,6 +227,11 @@ iframe {
       flex-direction: column;
   }
 
+  .table-scroll {
+    overflow: auto;
+    border-radius: 16px;
+  }
+
   table {
       font-size: .9rem;
   }
@@ -234,5 +239,6 @@ iframe {
   th,
   td {
       padding: 12px;
+      white-space: nowrap;
   }
 }
