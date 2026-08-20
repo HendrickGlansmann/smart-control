@@ -77,6 +77,13 @@ main h1 {
   font-size: 2rem;
 }
 
+#saudacao {
+  text-align: center;
+  color: #2584c4;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
