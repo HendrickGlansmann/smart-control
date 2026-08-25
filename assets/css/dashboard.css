@@ -191,6 +191,65 @@ iframe {
   box-shadow: 0 5px 20px rgba(0,0,0,.25);
 }
 
+body.dark-theme {
+  background: #181818;
+  color: #eaeaea;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background: #10193d;
+}
+
+body.dark-theme table {
+  background: #242424;
+  color: #eaeaea;
+}
+
+body.dark-theme thead {
+  background: #10193d;
+}
+
+body.dark-theme tbody tr:nth-child(even) {
+  background: #2c2c2c;
+}
+
+body.dark-theme tbody tr:hover {
+  background: #33475f;
+}
+
+#btnTema {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.4);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#btnTema:hover {
+  background: rgba(255,255,255,.15);
+}
+
+#campoBusca {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 20px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+body.dark-theme #campoBusca {
+  background: #2a2a2a;
+  color: #eaeaea;
+  border-color: #444;
+}
+
 @media (max-width: 768px) {
 
   .toggle-icon {
@@ -198,9 +257,15 @@ iframe {
     left: 0;
   }
 
+
+  header {
+    justify-content: space-between;
+  }
+
   .main-menu {
     visibility: hidden;
     opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
@@ -213,6 +278,11 @@ iframe {
     padding-left: 10px;
     padding-top: 10px;
     margin-top: 15px;
+  }
+
+  .main-menu.aberto {
+    visibility: visible;
+    opacity: 1;
   }
 
   header img {

@@ -11,10 +11,10 @@
     <header>
         <img src="assets/images/logo.png" alt="logo smart control" width="60" height="40">
         <nav class="navbar">
-            <div class="toggle-icon" onclick="toggleMenu()">
+            <div class="toggle-icon" id="btnMenu">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <ul class="main-menu">
+            <ul class="main-menu" id="mainMenu">
                 <li><a href="#relatorios">Relatórios</a></li>
                 <li><a href="producao.html">Produção</a></li>
                 <li><a href="#metas">Metas</a></li>
@@ -22,11 +22,13 @@
                 <li><a href="#ajuda">Ajuda</a></li>
             </ul>
         </nav>
+        <button id="btnTema" type="button">Dark Mode</button>
     </header>
 <main>
     <h1>DASHBOARD - Smart Control</h1>
     <div id = "saudacao"></div>
-    <div class="table-scroll">   
+    <div class="table-scroll">
+        <input type="text" id="campoBusca" placeholder="Buscar por nome, data ou status..."> 
         <table>
             <caption>Acessos Recentes Smart Control</caption>
 
@@ -103,28 +105,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
-
-<script>
-    const mainMenu = document.querySelector('.main-menu');
-    function toggleMenu() {
-        mainMenu.style.visibility == '' ? mainMenu.style.visibility = 'hidden' : undefined;
-
-        if(mainMenu.style.visibility == 'hidden'){
-            mainMenu.style.opacity = '1';
-            mainMenu.style.visibility = 'visible';
-        } else {
-            mainMenu.style.opacity = '0';
-            mainMenu.style.visibility = 'hidden'
-        }
-    }
-
-    window.addEventListener('resize', (e) => {
-        if(mainMenu.style.visibility == 'hidden'){
-            mainMenu.style.opacity = '1';
-            mainMenu.style.visibility = 'visible';
-        }
-    })
-</script>
 
 </body>
 

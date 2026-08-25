@@ -34,3 +34,39 @@ atualizarSaudacao();
 
 setInterval(atualizarSaudacao,6*1000)
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const campoBusca = document.getElementById("campoBusca");
+    const linhasTabela = document.querySelectorAll("table tbody tr");
+
+    campoBusca.addEventListener("input", (event) => {
+        const termo = event.target.value.toLowerCase().trim();
+
+            linhasTabela.forEach((linha) => {
+                const texto = linha.textContent.toLowerCase();
+                linha.style.display = texto.includes(termo) ? "" : "none";
+            });
+    });
+
+    const btnTema = document.getElementById("btnTema");
+
+    btnTema.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+
+        const ativo = document.body.classList.contains("dark-theme");
+        btnTema.textContent = ativo ? "Light Mode" : "Dark Mode";
+    });
+
+    const btnMenu = document.getElementById("btnMenu");
+    const mainMenu = document.getElementById("mainMenu")
+
+    btnMenu.addEventListener("click", () => {
+        mainMenu.classList.toggle("aberto");
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768 && mainMenu.classList.contains("aberto")) {
+            mainMenu.classList.remove("aberto");
+        }
+    });
+});
