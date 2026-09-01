@@ -155,6 +155,54 @@ form p a {
     justify-content: flex-end;
 }
 
+.mensagem-erro {
+    display: block;
+    min-height: 16px;
+    font-size: 12px;
+    color: #e74c3c;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.mensagem-erro.visivel {
+    opacity: 1;
+}
+
+input.valido,
+select.valido {
+    outline: 2px solid #2ecc71;
+}
+
+input.invalido,
+select.invalido {
+    outline: 2px solid #e74c3c;
+}
+
+.forca-senha {
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.forca-senha::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: var(--forca, 0%);
+    background: var(--cor-forca, #e74c3c);
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+button:disabled {
+    background: #b0b0b0;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

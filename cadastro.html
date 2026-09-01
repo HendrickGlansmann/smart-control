@@ -13,34 +13,43 @@
             <h1>Faça seu Cadastro</h1>
             <img src="assets/images/logo_transparent.png" alt="logo smart control">
             <p>Preencha o formulario abaixo com os respectivos dados cadastrais.</p>
-            <form method="get" action="dashboard.html">
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" id="nome" required>
+           <form id="form-cadastro" novalidate>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required minlength="3">
+                    <span class="mensagem-erro" id="erro-nome"></span>
 
-                <label for="email">E-mail Corporativo</label>
-                <input type="email" name="email" id="email" required>
+                    <label for="email">E-mail Corporativo</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="mensagem-erro" id="erro-email"></span>
 
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Deve conter pelo menos 8 caracteres" minlength="8">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required minlength="8">
+                    <span class="mensagem-erro" id="erro-senha"></span>
+                    <div class="forca-senha" id="forca-senha"></div>
 
-                <label for="nivel_acesso">Nivel de Acesso</label>
-                <select name="nivel_acesso" id="nivel_acesso" required>
-                    <option value="">Selecione o nivel de acesso</option>
-                    <option value="admin">Administrador</option>
-                    <option value="user">Usuário</option>
-                </select>
+                    <label for="nivel_acesso">Nivel de Acesso</label>
+                    <select id="nivel_acesso" name="nivel_acesso" required>
+                        <option value="">Selecione o nivel de acesso</option>
+                        <option value="admin">Administrador</option>
+                        <option value="user">Usuário</option>
+                    </select>
+                    <span class="mensagem-erro" id="erro-nivel"></span>
 
-                
-                <label for="termos" class="label-termos">
-                    <input type="checkbox" id="termos">
-                    Aceito os termos de uso
-                </label>
+                    <label class="label-termos">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        Aceito os termos de uso
+                    </label>
+                    <span class="mensagem-erro" id="erro-termos"></span>
 
-                <button type="submit">Cadastrar</button>
+                    <button type="submit" id="btn-cadastrar" disabled>Cadastrar</button>
+                </form>
                 <p>Já possui uma conta? <a href="index.html">Clique aqui para fazer login</a></p>
             </form>
         </div>
 
     </main>
+
+<script src="assets/js/cadastro.js"></script>
+
 </body>
 </html>

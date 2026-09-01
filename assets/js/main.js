@@ -1,6 +1,6 @@
 const exibirSaudacao = document.querySelector("#saudacao");
  
-const nomeCompleto = prompt("Digite seu nome completo:");
+const nomeCompleto = localStorage.getItem("nomeUsuario") || "Usuário";
 
 const diasSemana = [
     "Domingo", 
